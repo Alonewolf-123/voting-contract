@@ -1,0 +1,27 @@
+{
+  "name": "simple-vote",
+  "version": "1.0.0",
+  "description": "A simple voting contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alonewolf-123/simple-vote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alonewolf-123/simple-vote/issues"
+  },
+  "homepage": "https://github.com/Alonewolf-123/simple-vote#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "@openzeppelin/contracts-upgradeable": "^4.4.2",
+    "@openzeppelin/truffle-upgrades": "^1.12.0",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "truffle-plugin-verify": "^0.5.21"
+  }
+}
