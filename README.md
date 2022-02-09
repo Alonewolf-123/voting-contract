@@ -9,7 +9,7 @@ A simple voting contract
     - truffle deploy --network ropsten
     
 3. Contract addresses on ropsten
-    MyVoteV1: 0xBfeC779202aC57e8921CE4AD6D3ea9aa84e52EB7
-    MyVoteV2: 0xF5f14919146C79c84BC095215576ad1C2f913791
-    ProxyAddress: 0x7CA69611E5003751EAf39a0A7064e2143530a695
+    MyVoteV1: 0xCfb1A652a0EA5131D7fa3Cd19f815ED887074E3c
+    MyVoteV2: 0xaB132D73b00fff2537EedC8d272aAfd1d4862ff9
+    ProxyAddress: 0x1D15ccd461AE1f2ab57bd1b151ed6A06bB8507a9
     ProxyAdmin: 0x21c7ec06652a6c4e3259f3ca6904709c6bac1688

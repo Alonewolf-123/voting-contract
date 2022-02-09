@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
-import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
-contract MyBallotV1 is ERC721Upgradeable {
+contract MyBallotV1 is Initializable {
     // This will declare a new complex data type, which we can use to represent individual voters.
     struct ballotVoter {
         uint256 delegateWeight; // delegateWeight is accumulated by delegation
@@ -26,8 +26,11 @@ contract MyBallotV1 is ERC721Upgradeable {
     // A dynamically-sized array of 'Proposal' structs.
     Proposal[] public proposalsOption;
 
-    function initialize(uint256 _numProposalNames) public initializer {
-        __ERC721_init("MyBallotV1", "MBTV1");
+    function version() external virtual returns (string memory) {
+        return "1.0";
+    }
+
+    function initialize(uint256 _numProposalNames) public virtual initializer {
         chairman = msg.sender;
         ballotVoters[chairman].delegateWeight = 1;
 

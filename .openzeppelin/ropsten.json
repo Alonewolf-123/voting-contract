@@ -19,6 +19,16 @@
       "address": "0x7CA69611E5003751EAf39a0A7064e2143530a695",
       "txHash": "0x3a7462568c1dba33e068c9e3e78e586ebf188b1427f12c7f1b648dd8374bfa20",
       "kind": "transparent"
+    },
+    {
+      "address": "0xaDc4d6B658FCBB499a9667FD2ba39643EdD4A4cF",
+      "txHash": "0x10c3c606a7147abe70a2e7afde41447c1d37e55e0160e96fc60ba2b6e0bdf221",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x1D15ccd461AE1f2ab57bd1b151ed6A06bB8507a9",
+      "txHash": "0x0efa9511a9b11dae4456a5df2d5513cbc9495f751cf156cddd6a18e6087fb5c6",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -686,6 +696,196 @@
           },
           "t_array(t_uint256)50_storage": {
             "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a205e55139da96115c415ff433971309f1bc8ab14037b0250c634228adece784": {
+      "address": "0xCfb1A652a0EA5131D7fa3Cd19f815ED887074E3c",
+      "txHash": "0xc90f0542bb9c1e05eda8e0b57905e8069160be81b3bfc9d3d73a231d0c288eb0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "chairman",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:21"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "ballotVoters",
+            "type": "t_mapping(t_address,t_struct(ballotVoter)1659_storage)",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:24"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "proposalsOption",
+            "type": "t_array(t_struct(Proposal)1664_storage)dyn_storage",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:27"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_struct(ballotVoter)1659_storage)": {
+            "label": "mapping(address => struct MyBallotV1.ballotVoter)"
+          },
+          "t_struct(ballotVoter)1659_storage": {
+            "label": "struct MyBallotV1.ballotVoter",
+            "members": [
+              {
+                "label": "delegateWeight",
+                "type": "t_uint256"
+              },
+              {
+                "label": "voteSpent",
+                "type": "t_bool"
+              },
+              {
+                "label": "delegateTo",
+                "type": "t_address"
+              },
+              {
+                "label": "voteIndex",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_struct(Proposal)1664_storage)dyn_storage": {
+            "label": "struct MyBallotV1.Proposal[]"
+          },
+          "t_struct(Proposal)1664_storage": {
+            "label": "struct MyBallotV1.Proposal",
+            "members": [
+              {
+                "label": "proposalName",
+                "type": "t_bytes32"
+              },
+              {
+                "label": "voteCount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          }
+        }
+      }
+    },
+    "a53f37944b05cdbec2c03808eeaa03741c9117fecb52d2a53f648403f516c132": {
+      "address": "0xaB132D73b00fff2537EedC8d272aAfd1d4862ff9",
+      "txHash": "0xdf50df31a9db1ca23e6c5134d1392a49ec95ce038adb1e5d6eeda094cece9603",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:44"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "chairman",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:21"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "ballotVoters",
+            "type": "t_mapping(t_address,t_struct(ballotVoter)1659_storage)",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:24"
+          },
+          {
+            "contract": "MyBallotV1",
+            "label": "proposalsOption",
+            "type": "t_array(t_struct(Proposal)1664_storage)dyn_storage",
+            "src": "..\\project:\\contracts\\simple-vote-v1.sol:27"
+          },
+          {
+            "contract": "MyBallotV2",
+            "label": "chairman_v2",
+            "type": "t_address",
+            "src": "..\\project:\\contracts\\simple-vote-v2.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_struct(ballotVoter)1659_storage)": {
+            "label": "mapping(address => struct MyBallotV1.ballotVoter)"
+          },
+          "t_struct(ballotVoter)1659_storage": {
+            "label": "struct MyBallotV1.ballotVoter",
+            "members": [
+              {
+                "label": "delegateWeight",
+                "type": "t_uint256"
+              },
+              {
+                "label": "voteSpent",
+                "type": "t_bool"
+              },
+              {
+                "label": "delegateTo",
+                "type": "t_address"
+              },
+              {
+                "label": "voteIndex",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_struct(Proposal)1664_storage)dyn_storage": {
+            "label": "struct MyBallotV1.Proposal[]"
+          },
+          "t_struct(Proposal)1664_storage": {
+            "label": "struct MyBallotV1.Proposal",
+            "members": [
+              {
+                "label": "proposalName",
+                "type": "t_bytes32"
+              },
+              {
+                "label": "voteCount",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
           }
         }
       }
